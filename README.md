@@ -18,6 +18,16 @@ Wordpressのユーザープロフィールを取得し、一覧で表示でき�
 
 https://hurikura.com/staff
 
+## Thanks
+
+### font
+
+- A-OTF Jun Pro <https://fonts.adobe.com/fonts/a-otf-jun-pro>
+- VDL-LogoJrBlack <https://fonts.adobe.com/fonts/vdl-logojrblack>
+- Noto Sans Japanese <https://fonts.google.com/noto/specimen/Noto+Sans+JP>
+- MineCrafter <https://fontmeme.com/jfont/minecrafter-font/>
+- Minecraftia <https://fontlibrary.org/en/font/minecraftia>
+
 ## License
 
 GPL-2.0 license
