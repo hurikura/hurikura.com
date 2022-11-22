@@ -1,0 +1,1349 @@
+@charset "UTF-8";
+
+/*
+Theme Name: フリくら
+Author:	Yuta Kobayahsi
+Description: フリくらの<a href="https://hurikura.com">ウェブサイト</a>で利用しているWordPressテーマです。
+Author URI: https://y.at/%F0%9F%94%A8%F0%9F%9A%80%F0%9F%8E%A7%F0%9F%8E%A8
+License: GPLv2
+Version: 1.0
+-------------------------------------------------*/
+
+/*基本*/
+
+html {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+    word-break: normal;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: none;
+}
+
+blockquote,
+dd,
+div,
+dl,
+dt,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+ol,
+p,
+pre,
+td,
+th,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    word-wrap: break-word;
+}
+
+a {
+    color: #5ba9f7;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    vertical-align: middle;
+}
+
+iframe {
+    border: none;
+    width: 100%;
+    height: 350px;
+}
+
+time {
+    color: #b5b5b5;
+    margin-right: 10px;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'minecrafter';
+    src: url(fonts/Minecrafter.Reg.ttf) format('truetype');
+}
+
+/* ページネーション */
+
+.pagination a {
+    color: #444444;
+}
+
+.pagination a:hover {
+    background: #6bc349;
+    color: #fff;
+}
+
+.pagination .current,
+.post-page-numbers.current {
+    color: #fff;
+    cursor: default;
+    background-color: #3b8526;
+}
+
+.pagination a,
+.pagination span,
+.post-page-numbers {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    margin: 0;
+    background: #f5f5f5;
+    font-size: 17.5px;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 46px;
+}
+
+.pagination ul {
+    padding: 1.5em 0 0;
+    text-align: center;
+}
+
+.pagination li {
+    display: inline-block;
+    overflow: hidden;
+    margin: 3.5px;
+    padding: 0;
+    text-align: center;
+}
+
+.author-link {
+    list-style: none;
+}
+
+input[name="tab_item"] {
+    display: none;
+}
+
+.author-link i {
+    font-size: 25px;
+    color: #93a5b1;
+}
+
+.author-link li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 22px;
+    margin: 0.6rem 0.7rem 0 0 !important;
+}
+
+.article-card-meta {
+    margin: 0 13px 15px 13px;
+}
+
+.tab_content {
+    display: none;
+}
+
+.yellow {
+    color: #effc1e;
+}
+
+.alert-title {
+    margin: 1.5rem 0;
+    color: #ffb36b;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.alert {
+    background: rgba(11, 87, 208, 0.16);
+    padding: 1em 0;
+    font-size: .875rem;
+}
+
+.prnx_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.alert-title {
+    margin-bottom: 5px;
+}
+
+.cat-name {
+    font-weight: 500;
+    display: inline-block;
+    position: absolute;
+    padding: 0 10px;
+    border-radius: 14px;
+    color: #fff;
+    background: #b9c42f;
+    text-transform: uppercase;
+    top: 13px;
+    left: 12px;
+    line-height: 1.3;
+    text-align: center;
+    font-size: 15px;
+    height: 22px;
+}
+
+.logo img {
+    height: 38px;
+}
+
+.accordion-input {
+    display: none;
+}
+
+.Label {
+    padding: 1em;
+    display: block;
+    background: #fff;
+    font-weight: 700;
+    box-shadow: 0 3px 6px -1px rgb(77 88 101 / 15%);
+}
+
+.mc-button {
+    background: #3b8526;
+    box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c, 0 4px rgb(0 0 0 / 25%);
+    color: #fff;
+    text-shadow: 0 1px 0 #2a631c;
+    padding: 15px 24px;
+    border: none;
+    font-size: 1.125rem;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .25s, opacity .75s .5s;
+}
+}
+
+.mediakit-image {
+    padding: 1.2rem 1.5rem;
+    font-size: .95rem;
+    text-align: center;
+    border: 1px solid #5c93bb2b;
+}
+
+.download {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.download a {
+    color: #000;
+    box-shadow: 0 2px 3px -2px #21253840;
+    font-size: .85rem;
+    padding: 0.45em 0.75rem;
+    border: 1px solid #5c93bb2b;
+    border-radius: 0.45em;
+    font-weight: bold;
+}
+
+.mediakit-text {
+    padding: 1.2rem 1.5rem;
+    font-size: .95rem;
+    border: 1px solid #5c93bb2b;
+    color: #6e7b85;
+}
+
+.concept-text {
+    font-size: 1.5em;
+    margin: 30px 0;
+}
+
+.tabs input:checked+.tab_item {
+    background-color: #5ab4bd;
+    color: #fff;
+}
+
+.page-text {
+    margin-top: 20px;
+}
+
+.tab_item:hover {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+#chat:checked~#chat_content,
+#games:checked~#games_content,
+#design:checked~#design_content {
+    display: block;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+#chat:checked~.tab #chat,
+#games:checked~.tab #games,
+#design:checked~.tab #design {
+    background: rgba(0, 0, 0, 0.06);
+}
+
+.careers {
+    border-top: 2px solid #edf2f7;
+    padding: 3.5rem 0 4rem;
+}
+
+.careers h2 {
+    font-size: 2.25rem;
+}
+
+.careers h3 {
+    margin: 15px 0;
+}
+
+.career {
+    display: flex;
+}
+
+.hurikura-start {
+    display: grid;
+    grid-column-gap: 64px;
+    grid-template-columns: 1fr 1fr;
+    padding: 3.5rem 0 4rem;
+}
+
+.press-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+}
+
+.press-item {
+    display: flex;
+    padding: 16px;
+    border: 2px solid #edf2f7;
+}
+
+.press-image {
+    aspect-ratio: 16 / 9;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.tab_item {
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.footer a {
+    color: #3c3c3c;
+}
+
+@media screen and (max-width: 768px) {
+
+    .br-res {
+        display: none;
+    }
+}
+
+.entry-content a:hover {
+    text-decoration: underline;
+}
+
+.staf-hero {
+    padding: 3rem 5rem 1rem;
+}
+
+.staff-text {
+    font-size: 20px;
+}
+
+.hurikura-activity {
+    border-top: 2px solid #edf2f7;
+    padding: 3.5rem 0 4rem;
+}
+
+.hurikura-activity h3 {
+    font-size: 35px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.hurikura-activity img {
+    border-radius: 8px;
+    box-shadow: 0px 36px 89px rgba(0, 0, 0, 0.04), 0px 23.3333px 52.1227px rgba(0, 0, 0, 0.0303704), 0px 13.8667px 28.3481px rgba(0, 0, 0, 0.0242963), 0px 7.2px 14.4625px rgba(0, 0, 0, 0.02), 0px 2.93333px 7.25185px rgba(0, 0, 0, 0.0157037), 0px 0.666667px 3.50231px rgba(0, 0, 0, 0.00962963);
+}
+
+.hurikura-activity p {
+    margin-top: 30px;
+    color: #5f6368;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+
+.status {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    align-items: center;
+}
+
+.status div {
+    margin-right: 16px;
+}
+
+.status-online {
+    background: #3BA55D;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.status-user {
+    background: #808080;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.accordion-input:checked+label:after {
+    content: "-";
+}
+
+.accordion label:after {
+    content: "+";
+    font-family: Quicksand, sans-serif;
+    position: absolute;
+    right: 14px;
+    top: 17px;
+    top: calc(50% - 7.5px);
+    line-height: 15px;
+    font-size: 23px;
+    font-weight: 400;
+    color: #c1c1c1;
+}
+
+.accordion {
+    margin: 0.5em 0;
+}
+
+.Label,
+.content {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: all 0.3s;
+}
+
+.content {
+    /*本文*/
+    height: 0;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.accordion-input:checked+.Label+.content {
+    /*開閉時*/
+    height: auto;
+    padding: 20px;
+    transition: all .3s;
+}
+
+.accordion-input:checked+.Label::before {
+    transform: rotate(-45deg) !important;
+}
+
+#content {
+    margin-top: 2em;
+    padding-bottom: 2em;
+}
+
+.member-card {
+    padding: 25px 20px 20px;
+    filter: drop-shadow(0px 1px 7px #eee);
+    background: #fff;
+    border-radius: 15px;
+}
+
+.mcfont {
+    font-family: 'minecrafter';
+    font-weight: 500;
+}
+
+.page-title {
+    font-size: 35px;
+}
+
+.authordescri {
+    font-size: 0.9rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #555555;
+}
+
+.authortext {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.authorall_img {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.author-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.author-content a {
+    font-size: 25px;
+    font-family: 'minecrafter';
+    font-weight: 500;
+    color: #000000d1;
+}
+
+.authorall_img img {
+    border-radius: 50%;
+    border: solid 3px #dfe2e8;
+}
+
+.author-image img {
+    border-radius: 50%;
+    border: solid 3px #dfe2e8;
+    margin-top: -77px;
+}
+
+.members-cards {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.faq {
+    background: #F1F5F9;
+    padding: 3.5rem 0 4rem;
+}
+
+.faq h4 {
+    text-align: center;
+}
+
+.text {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.authortext a:hover,
+.author-content a:hover {
+    background: 0 0;
+    opacity: .6;
+}
+
+.profile-sns li .fa-link {
+    background: #93A5B1;
+}
+
+.authortext a {
+    font-family: 'minecrafter';
+    font-weight: 500;
+    color: #000000d1;
+}
+
+.image {
+    filter: drop-shadow(0 2px 12px rgba(0, 0, 0, 0.07));
+    border-radius: 20px;
+}
+
+.hurikura-about {
+    display: block;
+}
+
+.author-content {
+    margin-top: 18px;
+}
+
+.author-content p {
+    color: #555;
+}
+
+.author-box {
+    text-align: center;
+    border-top: 1px solid #e1e1e1;
+    margin-top: 75px;
+}
+
+
+.entry-meta {
+    display: flex;
+    align-items: center;
+    margin: 12px 0 24px;
+}
+
+.player {
+    position: relative;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 1;
+    padding-top: 56.25%;
+}
+
+.player iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.entry-title {
+    font-size: 3.5rem;
+    line-height: 1.1
+}
+
+.about-minecraft h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.minecraft-icon {
+    height: 80px;
+}
+
+.why-minecraft {
+    margin-top: 2px;
+    padding: 3.5rem 0 4rem;
+}
+
+@media screen and (min-width: 1440px) {
+    .about-minecraft {
+        order: 2;
+    }
+
+    .hurikura-world {
+        order: 1;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .about-minecraft {
+        order: 2;
+    }
+
+    .hurikura-world {
+        order: 1;
+    }
+
+}
+
+.minecraft {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 64px;
+    display: grid;
+    width: 100%;
+    align-items: flex-end;
+    row-gap: unset;
+}
+
+.login {
+    color: #fff;
+    background: #2FAE36;
+    height: 36px;
+    width: 80px;
+    font-weight: bold;
+    margin-left: 22px;
+    font-size: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+}
+
+.articles-cards {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.articles {
+    padding: 3.5rem 0 4rem;
+}
+
+
+.post-dec {
+    display: block;
+    padding-top: 15px;
+    line-height: 1.6;
+}
+
+.post-dec div {
+    padding: 0 13px
+}
+
+.articles h4 {
+    font-size: 35px;
+}
+
+.post-dec p {
+    font-weight: 700;
+    color: #555555
+}
+
+.cta-button {
+    margin-top: 30px;
+}
+
+.article-card {
+    box-shadow: 0 4px 8px -2px #000a3c1a;
+    border-radius: 15px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.faq_content h4 {
+    font-size: 35px;
+}
+
+.entry {
+    margin-bottom: 50px;
+}
+
+#breadcrumb {
+    /*パンくずリスト全体の設定*/
+    font-size: 20px;
+    /*文字サイズ*/
+    letter-spacing: .2em;
+    /*文字と文字の間の幅*/
+    margin-bottom: 25px;
+}
+
+.staff {
+    margin: 4rem 0 5rem;
+}
+
+.about-staff h3 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.staff-button {
+    margin-top: 30px;
+}
+
+.staff-button a {
+    background: #2FAE36;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 5px -2px #21253840;
+    padding: 0.7em 1.3em;
+    font-weight: bold;
+}
+
+.about-staff {
+    background: #F1F5F9;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .entry-title {
+        font-size: 27px;
+    }
+}
+
+.header-profile-icon {
+    width: 120px;
+}
+
+.header-sns {
+    list-style: none;
+    display: flex;
+}
+
+.author-link i:hover,
+.header-sns i:hover {
+    color: #000000d1;
+}
+
+.header-sns i {
+    font-size: 20px;
+    color: #93a5b1;
+}
+
+.header-sns li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 22px;
+    margin: 0.6rem 0.7rem 0 0;
+}
+
+.header-profile-text {
+    padding-left: 28px;
+    flex: 1;
+    font-size: .95rem;
+    line-height: 1.6;
+}
+
+.header-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.no-articles {
+    text-align: center;
+    margin-top: 25px;
+    min-height: 100vh;
+}
+
+.no-articles img {
+    margin: 1.5rem 0;
+}
+
+.no-articles p {
+    font-size: 1.4rem;
+    color: #93a5b1;
+    line-height: 1.6;
+    font-weight: 700;
+    font-family: 'MinecraftiaRegular', 'Noto Sans JP', sans-serif;
+}
+
+#breadcrumb li:first-child a:before {
+    padding-right: 6px;
+    color: rgba(0, 0, 0, .2);
+    font-family: FontAwesome;
+    content: "\f3c5";
+    font-size: 14px;
+}
+
+#breadcrumb li {
+    display: inline;
+    list-style: none;
+    color: gray;
+    font-size: .87em;
+}
+
+#breadcrumb li:after {
+    padding: 0 6px;
+    color: rgba(0, 0, 0, .2);
+    font-family: FontAwesome;
+    content: "\f0da";
+    font-size: 14px;
+}
+
+#breadcrumb li:last-child:after {
+    /*横三角の最後*/
+    display: none;
+    /*いらないから削除*/
+}
+
+.entry-content p {
+    margin: 0 0 1.5em;
+    line-height: 1.93;
+    font-size: 107%;
+}
+
+.article-card:hover {
+    box-shadow: 0 6px 12px -4px #001b4433;
+}
+
+.article-card-link h2 {
+    padding: 8px 0 15px 0;
+    font-size: 20px;
+    color: #555555;
+}
+
+.pubdate:before {
+    content: "\f017";
+    font-weight: 900;
+    padding-right: 5px;
+    color: #b5b5b5;
+    font-family: "Font Awesome 6 Free";
+}
+
+.updated:before {
+    content: "\f021";
+    font-weight: 900;
+    padding-right: 5px;
+    color: #b5b5b5;
+    font-family: "Font Awesome 6 Free";
+}
+
+.entry-content h2 {
+    margin: 2.5em 0 0.7em;
+    font-size: 1.4em;
+    line-height: 1.6;
+}
+
+.share span {
+    color: #999;
+}
+
+.entry-content {
+    margin-top: 15px;
+}
+
+.share-button {
+    font-size: 30px;
+    padding: 0.75rem;
+    color: #93a5b1;
+}
+
+.share-button:hover {
+    color: #000000d1
+}
+
+.share-warp {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.share {
+    align-items: flex-start;
+    flex-direction: column;
+    float: left;
+    justify-content: flex-end;
+    margin-left: calc(50vw - 35.5rem);
+    overflow: visible;
+    padding: 0;
+    position: sticky;
+    top: 1rem;
+    width: auto;
+    z-index: 1;
+}
+
+.respawn {
+    display: inline-block;
+    font-family: 'MinecraftiaRegular', 'Noto Sans JP', sans-serif;
+    padding: 0.5em 3.5em;
+    text-decoration: none !important;
+    background-color: #6f6f6f;
+    border: solid 2px #a7a7a7;
+    border-right: solid 2px #5a5b5b;
+    border-bottom: solid 2px #5a5b5b;
+    box-shadow: 0px 0px 0px 2px #0a0a0a;
+    color: #fff;
+}
+
+.respawn:hover {
+    background-color: #7e88bf;
+    border: solid 2px #c1cbff;
+    border-right: solid 2px #5c659d;
+    border-bottom: solid 2px #5c659d;
+}
+
+.post-author {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.profile-sns {
+    text-align: center;
+}
+
+.profile-sns li .fa-twitter {
+    background: #3ab4ff;
+}
+
+.profile-sns li .fa-youtube {
+    background: #f0504f;
+}
+
+.profile-sns li .fa-instagram {
+    background: url(img/insta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.entry-content ol,
+.entry-content ul {
+    padding-left: 1.8em;
+    margin: 1.4rem 0;
+    list-style: inherit;
+}
+
+.entry-content ol>li,
+.entry-content ul>li {
+    margin: 0.4rem 0;
+}
+
+.entry-content ol>li,
+entry-content ul>li {
+    list-style: decimal;
+    padding-left: 0.2em;
+}
+
+.entry-content ol>li,
+,
+.entry-content ul>li,
+.entry-content ul>li {
+    margin: 0.4rem 0;
+}
+
+.profile-sns li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.profile-sns li:hover {
+    transform: scale(1.1);
+}
+
+.profile-sns li i {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 23px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.profile-sns li a {
+    display: block;
+    color: #555;
+    width: 48px;
+    height: 48px;
+}
+
+.author-photo {
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.faq_content h4 {
+    font-size: 35px;
+}
+
+.dec {
+    text-align: center;
+    color: #6E7B85;
+    margin: 20px 0;
+}
+
+.author-info {
+    font-weight: bold;
+    color: #555555;
+}
+
+.main {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 0;
+}
+
+.footer-nav li {
+    margin-top: 12px;
+}
+
+.footer-nav li a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    border-bottom: 1px solid #edf2f7;
+}
+
+.name_1 {
+    color: #2FAE36
+}
+
+.name_2 {
+    color: #A96622
+}
+
+.name_1,
+.name_2 {
+    font-family: vdl-logojrblack, sans-serif;
+    font-weight: 900;
+    font-size: 64px
+}
+
+.hurikura-grid {
+    display: grid;
+    grid-column-gap: 64px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero-description {
+    color: #5f6368;
+    font-size: 20px;
+}
+
+.inner {
+    height: 64px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.cta_content text {
+    margin-top: 0.8em;
+}
+
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer {
+    padding: 80px 0 40px;
+}
+
+.footer-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 5%;
+}
+
+.social-icons {
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+}
+
+.icon {
+    margin-left: 20px;
+}
+
+.error {
+    text-align: center;
+}
+
+.error h1 {
+    font-size: 8em;
+}
+
+.error p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.error img {
+    border-radius: 20px;
+    margin: 2rem auto;
+}
+
+.subtitle {
+    color: #DDA71E;
+    font-size: 25px;
+    margin-top: 20px;
+    font-family: a-otf-jun-pro, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.social-icons a {
+    border-radius: 100%;
+    display: block;
+    height: 50px;
+    line-height: 55px;
+    text-align: center;
+    width: 50px;
+}
+
+.social-icons i {
+    font-size: 30px;
+}
+
+.dsicord {
+    margin: 30px 0;
+}
+
+.cta_content {
+    width: calc(100% - 310px);
+}
+
+.cta {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 5rem 1rem;
+    background: #E6F2FF;
+    border-radius: 20px;
+    margin: 4rem 0 1rem;
+}
+
+.cta_title {
+    font-size: 2.4em;
+    font-weight: bold;
+}
+
+.about {
+    padding-bottom: 4rem;
+}
+
+.skin {
+    display: flex;
+    align-items: flex-end;
+}
+
+.dsicord a {
+    display: inline-block;
+    background: #5865F2;
+    padding: 0.7em 1.3em;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 20%), 0 2px 3px -2px rgb(0 0 0 / 15%);
+}
+
+@media screen and (max-width: 576px) {
+
+    .members-cards {
+        display: block;
+    }
+
+    .hurikura-start {
+        display: block;
+    }
+
+    .press-wrapper {
+        display: block;
+    }
+
+    .career {
+        display: block;
+    }
+
+    .member-card {
+        margin-bottom: 2em;
+    }
+
+    .article-card {
+        margin-bottom: 2em;
+    }
+
+    .skin {
+        margin: 1.5rem 0 0 auto;
+    }
+
+    .cta {
+        display: block;
+        padding: 1.8rem 1.7rem;
+    }
+
+    .about-staff {
+        display: block;
+    }
+
+    .about-staff img {
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .staf-hero {
+        padding: 2rem 2rem 2rem;
+    }
+
+    .cta_content {
+        width: 100%;
+    }
+
+    .cta_content {
+        width: 100%;
+    }
+
+
+    .articles-cards {
+        display: block;
+    }
+
+    .articles-card {
+        margin-bottom: 2em;
+    }
+
+    .hero-description {
+        margin-bottom: 15px;
+    }
+
+    .header-profile {
+        display: block;
+    }
+
+    .header-profile-text {
+        margin-top: 0.8rem;
+        padding-left: 0;
+    }
+
+    .footer-column {
+        display: block;
+    }
+
+    .footer-nav h4 {
+        margin: 2rem 0 0.7rem;
+    }
+
+
+    .minecraft {
+        display: block;
+    }
+
+    .hurikura-grid {
+        display: block;
+    }
+}
