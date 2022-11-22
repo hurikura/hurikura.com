@@ -17,3 +17,7 @@
 Wordpressのユーザープロフィールを取得し、一覧で表示できます。固定ページのテンプレートを適用するだけで簡単に実装できます。
 
 https://hurikura.com/staff
+
+## License
+
+GPL-2.0 license
