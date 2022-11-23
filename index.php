@@ -29,7 +29,7 @@
           <h3>
             Minecraftを活用する<br class="br-res">理由
           </h3>
-          <p class="hero-description">月間アクティブユーザー約1億4千万人を抱えるポピュラーなサンドボックスゲームで、テクノロジー教育などにも利用されており、デジタル上での活動やコミュニケーションが得意な人も中には存在します。</p>
+          <p class="hero-description">月間アクティブユーザー約1億4千万人を抱えるポピュラーなサンドボックスゲームで、テクノロジー教育などにも利用されており、デジタル上での表現やコミュニケーションが得意な人も中には存在します。</p>
         </div>
         <div class="hurikura-world">
           <img class="image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/hurikura-world.png">
