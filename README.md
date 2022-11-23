@@ -1,7 +1,7 @@
 # hurikura.com
 
 [![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
-[![Github All Releases](https://img.shields.io/github/downloads/hurikura/wordpress-theme/total.svg)](https://github.com/hurikura/hurikura.com/releases)
+[![Github All Releases](https://img.shields.io/github/downloads/hurikura/hurikura.com/total.svg)](https://github.com/hurikura/hurikura.com/releases)
 [![Discord](https://img.shields.io/discord/972742767224705044?color=%235865F2&label=Discord&logo=discord&logoColor=white)](https://discord.com/invite/UsbHGENsc2)
 
 ![hurikura.com](https://user-images.githubusercontent.com/91340399/203094850-2fd28b60-b34a-4dfa-9596-b3d0feb65ae2.png)
